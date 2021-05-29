@@ -8,6 +8,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenubarComponent } from './common/menubar/menubar.component';
 import { AddressComponent } from './pages/contact/address/address.component';
+import { ServiceItemComponent } from './pages/home/service-item/service-item.component';
+import { FormComponent } from './pages/home/form/form.component';
+import { FormsModule } from '@angular/forms';
+import { DetailsComponent } from './pages/home/details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +20,16 @@ import { AddressComponent } from './pages/contact/address/address.component';
     ContactComponent,
     HomeComponent,
     MenubarComponent,
-    AddressComponent
+    AddressComponent,
+    ServiceItemComponent,
+    FormComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
